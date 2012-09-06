@@ -1,0 +1,2 @@
+A simple proxy to accept twitter v1 rss api requests for a user timeline
+(good for use adding users in an RSS aggregator).

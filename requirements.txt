@@ -1,0 +1,4 @@
+PyRSS2Gen==1.1
+bottle==0.10.11
+httplib2==0.7.5
+oauth2==1.5.211
