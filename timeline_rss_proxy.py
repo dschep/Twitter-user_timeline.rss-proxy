@@ -68,10 +68,10 @@ def setup():
     access_token = dict(urlparse.parse_qsl(content))
 
     with open('secrets.py', 'w') as secret_file:
-        secret_file.write('consumer_key = {0:r}'.format(_consumer_key))
-        secret_file.write('consumer_secret = {0:r}'.format(_consumer_secret))
-        secret_file.write('oauth_token = {0:r}'.format(access_token['token']))
-        secret_file.write('oauth_token_secret = {0:r}'.format(
+        secret_file.write('consumer_key = {0!r}'.format(_consumer_key))
+        secret_file.write('consumer_secret = {0!r}'.format(_consumer_secret))
+        secret_file.write('oauth_token = {0!r}'.format(access_token['token']))
+        secret_file.write('oauth_token_secret = {0!r}'.format(
             access_token['token_secret']))
 
 
