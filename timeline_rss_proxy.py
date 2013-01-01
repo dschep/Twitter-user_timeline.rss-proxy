@@ -4,7 +4,7 @@ import oauth2 as oauth
 import os
 
 
-from bottle import route, run, response
+from bottle import route, run, response, default_app
 import datetime
 import json
 import PyRSS2Gen
@@ -122,4 +122,4 @@ def index(name):
     response.content_type = 'application/rss+xml; charset=latin9'
     return rss.to_xml()
 
-run(host='localhost', port=8080)
+application = default_app()
